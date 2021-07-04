@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Where is the ISS?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
+
+</head>
+<body>
+  <h1>What the hell ya know 'bout ISS?</h1>
+  <main>
+    <button id='getList'>Who the hell is on the ISS already?</button>
+    <button id='displayButton' style='display:none'>Hide list</button>  <!-- W ten sposób zmieniamy poprzez HTML styl w CSS!!!! -->
+    <div id="astronauts"></div>
+    <h3>Where the hell are they already?</h3>
+
+
+    <a href='' target="_blank"><strong id="position">See this region on Google Maps</a></strong>
+    <div id="mapid" style="width: 1000px; height: 400px;"></div>
+    <strong id="coordinatesFooter" style="color:rgba(255, 255, 255, 0.596)"></strong>
+    <br><br>
+    <button id="MapSatelite">Switch Map/Satelite</button>
+    
+    <br><br>
+    <button id="refresh_position">Are you the hell inpatient? Refresh the hell it!</button>
+  </main>
+  <script src="js/iss astronauts promises.js"></script>
+  <script src="js/iss position.js"></script>
+</body>
+</html>
