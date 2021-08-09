@@ -75,7 +75,7 @@ h2 {
 }
 
 h2 + p {
-  color: #828282;
+  color: #141414ab;
   margin: 0 0 1.5em 0;
 }
 
@@ -93,8 +93,10 @@ button {
   border: none;
   border-radius: 100px;
   margin: auto;
+  margin-top: 20px;
   outline: 0;
-  box-shadow: 0 0px 30px rgba(240, 255, 25, 0.39)
+  box-shadow: 0 0px 30px rgba(240, 255, 25, 0.39);
+
 }
 button:hover {
   cursor: pointer;
